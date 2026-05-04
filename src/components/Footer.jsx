@@ -10,7 +10,7 @@ const Footer = () => {
   const links = [
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shwetameena' },
     { label: 'GitHub', url: 'https://github.com/shwetameena' },
-    { label: 'Buy Me a Coffee', url: 'https://www.buymeacoffee.com/shwetameena' },
+    { label: 'Buy Me a Coffee', url: 'https://buymeacoffee.com/shwetameenk?new=1' },
   ]
 
   return (
