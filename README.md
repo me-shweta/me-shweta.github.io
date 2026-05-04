@@ -253,6 +253,6 @@ For inquiries or collaboration opportunities, please reach out through the conta
 
 **Made with ❤️ by Shweta**
 
-For setup help, see [INSTALLATION.md](INSTALLATION.md)
+For setup help, see [INSTALLATION.md](INSTALLATION.md) 
 
 
