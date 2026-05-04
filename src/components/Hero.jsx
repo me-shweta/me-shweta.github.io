@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { GraduationCap, Briefcase, Trophy } from 'lucide-react';
 
 const InteractiveCard = ({ children, className, hoverBg = "bg-pink-100" }) => {
   const x = useMotionValue(0);
@@ -76,13 +77,13 @@ const Hero = () => {
 
       {/* SECTION 2: THE MAIN DETAILS CARD */}
       <div id="details-card" className="w-full px-4 md:px-10 lg:container lg:mx-auto lg:px-14 pb-24">
-        <div id="hero-main" className="bg-white dark:bg-[#2d1438] rounded-[2rem] md:rounded-[3rem] p-5 md:p-10 shadow-2xl border-2 border-black dark:border-white/10 relative transition-colors duration-300">
+        <div id="hero-main" className="bg-white dark:bg-[#2d1438] rounded-[2rem] md:rounded-[3rem] px-5 md:px-10 py-4 md:py-6 ...">
           
           <div className="grid lg:grid-cols-12 gap-6">
             
             <div className="lg:col-span-8">
-              <header className="mb-4">
-                <h2 className="font-heading font-black text-5xl md:text-5xl mb-4 leading-[1.0] text-black dark:text-white tracking-tighter uppercase">
+              <header className="mb-3">
+                <h2 className="font-heading font-black text-5xl md:text-5xl mb-2 leading-[1.0] text-black dark:text-white tracking-tighter uppercase">
                   Shweta Meena, <br /> 
                   <AnimatePresence mode="wait">
                     <motion.span 
@@ -100,7 +101,7 @@ const Hero = () => {
                   I am a UI/UX Designer and Researcher passionate about building purposeful digital solutions. I enjoy deconstructing complex challenges into intuitive, human-centric experiences while pursuing my B.Tech at Cluster Innovation Centre, University of Delhi.
                 </p>
 
-<div className="flex flex-wrap gap-3 mb-6">
+<div className="flex flex-wrap gap-3 mb-4">
   {[
     'Strategy', 
     'UI/UX Design', 
@@ -148,11 +149,11 @@ const Hero = () => {
                 
                 {/* Education Box - Fills with Pink */}
                 <InteractiveCard 
-                  hoverBg="bg-[#FDF2F8] dark:bg-[#DB007D]/20"
+                  hoverBg="bg-[#FDF2F8] dark:bg-[#DB007D]/40"
                   className="bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-[1.5rem] p-5 shadow-[4px_4px_0px_black] dark:shadow-[4px_4px_0px_#DB007D] flex flex-col transition-all text-black dark:text-white"
                 >
                   <h3 className="font-heading font-black text-lg mb-4 uppercase text-[#DB007D] dark:text-[#FFCE13] flex items-center gap-2">
-                    <span>🎓</span> Education
+                    <GraduationCap size={20} /> Education
                   </h3>
                   <div className="space-y-5 flex-grow">
                     <div>
@@ -177,11 +178,11 @@ const Hero = () => {
 
                 {/* Experience Box - Fills with Lime */}
                 <InteractiveCard 
-                  hoverBg="bg-[#F7FEE7] dark:bg-[#A7E614]/10"
+                  hoverBg="bg-[#F7FEE7] dark:bg-[#A7E614]/30"
                   className="bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-[1.5rem] p-5 shadow-[4px_4px_0px_black] dark:shadow-[4px_4px_0px_#A7E614] flex flex-col transition-all text-black dark:text-white"
                 >
                   <h3 className="font-heading font-black text-lg mb-4 uppercase text-[#A7E614] flex items-center gap-2">
-                    <span>💼</span> Internships
+                    <Briefcase size={20} /> Internships
                   </h3>
                   <div className="space-y-5 flex-grow">
                     <div>
@@ -201,11 +202,11 @@ const Hero = () => {
 
                 {/* Awards Box - Fills with Blue */}
                 <InteractiveCard 
-                  hoverBg="bg-[#EFF6FF] dark:bg-[#9AB4E6]/10"
+                  hoverBg="bg-[#EFF6FF] dark:bg-[#9AB4E6]/30"
                   className="bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-[1.5rem] p-5 shadow-[4px_4px_0px_black] dark:shadow-[4px_4px_0px_#9AB4E6] flex flex-col transition-all text-black dark:text-white"
                 >
                   <h3 className="font-heading font-black text-lg mb-4 uppercase text-[#9AB4E6] flex items-center gap-2">
-                    <span>🏆</span> Awards
+                    <Trophy size={20} /> Awards
                   </h3>
                   <div className="space-y-5 flex-grow">
                     <div>
@@ -228,10 +229,10 @@ const Hero = () => {
             <div className="lg:col-span-4">
               <div className="sticky top-24">
                 <InteractiveCard 
-                  hoverBg="bg-white/10 dark:bg-[#DB007D]/10"
-                  className="bg-[#fff7c5] dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-[2.5rem] p-6 shadow-[8px_8px_0px_black] dark:shadow-[8px_8px_0px_#DB007D] text-center transition-colors"
+                  hoverBg="bg-transparent"
+                  className="bg-[#fff7c5] dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-[2.5rem] p-6 shadow-[8px_8px_0px_black] dark:shadow-[8px_8px_0px_#DB007D] text-center transition-none"
                 >
-                  <img src="/my-avatar.png" alt="Shweta" className="w-full h-auto rounded-[2rem] border-2 border-black dark:border-white/20 mb-6 grayscale hover:grayscale-0 transition-all duration-700 shadow-md" />
+                  <img src="/my-avatar.png" alt="Shweta" className="w-full h-auto rounded-[2rem] border-2 border-black dark:border-white/20 mb-6" />
                   <p className="font-heading font-black text-3xl uppercase tracking-tighter text-black dark:text-white">Shweta Meena</p>
                   <p className="text-[10px] font-bold opacity-50 dark:opacity-70 uppercase tracking-[0.1em] mt-3 text-black dark:text-white">Love to interact with people and ideas alike.</p>
                 </InteractiveCard>
