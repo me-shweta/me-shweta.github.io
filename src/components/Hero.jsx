@@ -58,9 +58,9 @@ const Hero = () => {
           <span className="px-6 py-2 bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-full font-heading font-black text-xs uppercase shadow-[4px_4px_0px_black] dark:shadow-[4px_4px_0px_#DB007D] dark:text-white">2026</span>
         </div>
 
-        <div className="text-center relative">
+        <div className="text-center relative pt-15 md:pt-28">
           <div className="absolute left-[-50px] top-0 w-48 h-48 bg-gradient-to-tr from-blue-300 via-purple-300 to-pink-300 dark:from-[#3F194D] dark:to-[#DB007D] blur-[60px] opacity-40 z-0" />
-          <h1 className="font-heading font-black text-[8rem] md:text-[14rem] lg:text-[16rem] leading-[0.85] text-black dark:text-white tracking-tighter uppercase relative z-10">
+          <h1 className="font-heading font-black text-[8rem] md:text-[10rem] lg:text-[14rem] leading-[0.85] text-black dark:text-white tracking-tighter uppercase relative z-10">
             P<span className="text-[#DB007D]">★</span>RT<br/>FOLIO
           </h1>
         </div>
