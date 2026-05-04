@@ -187,7 +187,7 @@ const Skills = () => {
                   className="flex items-center justify-between px-4 py-2.5 bg-[#BFDBFE] dark:bg-[#9AB4E6]/20 border-2 border-black dark:border-white/10 rounded-xl shadow-[3px_3px_0px_black] dark:shadow-[3px_3px_0px_#9AB4E6] cursor-default"
                 >
                   <span className="font-black text-[10px] uppercase flex items-center gap-3 text-[#1E40AF] dark:text-[#9AB4E6]">
-                    <Music size={18}/> Music
+                    <Music size={18}/> Listening to Music
                   </span>
                 </div>
 
@@ -196,7 +196,7 @@ const Skills = () => {
                   className="flex items-center justify-between px-4 py-2.5 bg-[#FBCFE8] dark:bg-[#DB007D]/20 border-2 border-black dark:border-white/10 rounded-xl shadow-[3px_3px_0px_black] dark:shadow-[3px_3px_0px_#DB007D] cursor-default"
                 >
                   <span className="font-black text-[10px] uppercase flex items-center gap-3 text-[#9D174D] dark:text-[#F9A8D4]">
-                    <Heart size={18} className="fill-current" /> Stickers & Keychains
+                    <Heart size={18} className="fill-current" /> Collecting Stickers & Keychains
                   </span>
                 </div>
               </div>
