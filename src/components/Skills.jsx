@@ -51,12 +51,12 @@ const ExperienceItem = ({ icon: Icon, date, role, company, location, details, sk
           <Icon size={16} className="text-black" />
         </div>
         <div>
-          <p className="text-[9px] font-black uppercase text-black/50 leading-none mb-1">{date}</p>
-          <h4 className="font-black text-sm uppercase text-black leading-tight">{company}</h4>
+          <p className="text-[9px] font-black uppercase text-black/50 dark:text-white/40 leading-none mb-1">{date}</p>
+          <h4 className="font-black text-sm uppercase text-black dark:text-white leading-tight">{company}</h4>
         </div>
       </div>
       <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
-        <ChevronDown size={20} className="text-black" />
+        <ChevronDown size={20} className="text-black dark:text-white" />
       </motion.div>
     </button>
     
@@ -69,11 +69,11 @@ const ExperienceItem = ({ icon: Icon, date, role, company, location, details, sk
           className="overflow-hidden"
         >
           <div className="pb-6 pl-14">
-            <p className="text-[10px] font-black text-[#DB007D] uppercase mb-3">{role} {location && `· ${location}`}</p>
-            <ul className="text-[11px] font-bold text-black space-y-2 mb-4 leading-tight list-disc list-inside opacity-90">
+            <p className="text-[10px] font-black text-[#DB007D] dark:text-[#F9A8D4] uppercase mb-3">{role} {location && `· ${location}`}</p>
+            <ul className="text-[11px] font-bold text-black dark:text-white/90 space-y-2 mb-4 leading-tight list-disc list-inside opacity-90">
               {details.map((point, i) => <li key={i}>{point}</li>)}
             </ul>
-            <p className="text-[9px] font-black uppercase text-black/60 tracking-wider">Skills: {skills}</p>
+            <p className="text-[9px] font-black uppercase text-black/60 dark:text-white/40 tracking-wider">Skills: {skills}</p>
           </div>
         </motion.div>
       )}
@@ -135,7 +135,7 @@ const Skills = () => {
       <div className="container mx-auto max-w-6xl">
         
         <div className="flex items-end justify-start relative z-10">
-          <div className="bg-[#FFCE13] dark:bg-[#DB007D] border-2 border-black border-b-0 text-black dark:text-white px-8 py-3 text-xs font-black uppercase tracking-widest rounded-t-xl">
+          <div className="bg-[#FFCE13] dark:bg-[#2D1433] border-2 border-black border-b-0 text-black dark:text-[#F9A8D4] px-8 py-3 text-xs font-black uppercase tracking-widest rounded-t-xl">
             Expertise & Experience
           </div>
         </div>
@@ -153,7 +153,7 @@ const Skills = () => {
               </div>
             </div>
 
-            {/* Tool Stack - Extreme low padding */}
+            {/* Tool Stack */}
             <div className="mt-2 mb-2">
               <h3 className="font-heading font-black text-2xl uppercase mb-1 tracking-tighter text-black dark:text-white">Tool Stack</h3>
               <div className="relative h-20 flex items-center justify-around px-2">
@@ -180,11 +180,11 @@ const Skills = () => {
           </div>
 
           {/* RIGHT COLUMN: ACCORDION EXPERIENCES */}
-          <div className="lg:col-span-7 bg-[#FFCE13] dark:bg-[#DB007D] border-2 border-black rounded-2xl shadow-[6px_6px_0px_black] overflow-hidden flex flex-col">
-            <div className="p-6 border-b-2 border-black bg-[#FFCE13] dark:bg-[#DB007D]">
-               <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-black">Experience</h3>
+          <div className="lg:col-span-7 bg-[#FFCE13] dark:bg-[#1E0B21] border-2 border-black dark:border-[#DB007D]/40 rounded-2xl shadow-[6px_6px_0px_black] dark:shadow-[6px_6px_0px_#DB007D] overflow-hidden flex flex-col transition-colors duration-500">
+            <div className="p-6 border-b-2 border-black bg-[#FFCE13] dark:bg-[#2D1433]">
+               <h3 className="font-heading font-black text-2xl uppercase tracking-tighter text-black dark:text-[#F9A8D4]">Experience</h3>
             </div>
-            <div className="flex-grow overflow-y-auto px-6 custom-scrollbar bg-white/20">
+            <div className="flex-grow overflow-y-auto px-6 custom-scrollbar bg-white/20 dark:bg-transparent">
               {experiences.map((exp, i) => (
                 <ExperienceItem 
                   key={i} 
