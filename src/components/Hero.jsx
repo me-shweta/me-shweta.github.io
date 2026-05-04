@@ -51,7 +51,7 @@ const Hero = () => {
       
       {/* SECTION 1: TYPOGRAPHIC COVER */}
       <div className="min-h-screen flex flex-col items-center justify-center relative px-6 lg:px-20">
-        <div className="absolute top-24 left-4 md:left-10 lg:left-40 z-20">
+        <div className="absolute top-50 left-10 md:left-10 lg:left-40 z-20">
           <span className="px-6 py-2 bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-full font-heading font-black text-xs uppercase shadow-[4px_4px_0px_black] dark:shadow-[4px_4px_0px_#DB007D] dark:text-white">UX/UI</span>
         </div>
         <div className="absolute top-1/2 right-10 lg:right-60 rotate-12 z-20">
