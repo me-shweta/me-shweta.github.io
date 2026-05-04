@@ -22,11 +22,11 @@ const Footer = () => {
               whileHover={{ 
                 y: -3, 
                 boxShadow: "4px 4px 0px rgba(0,0,0,1)",
-                backgroundColor: "#FFCE13", // Brand yellow highlight
+                backgroundColor: "#FFCE13", 
                 color: "#000000"
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white dark:bg-[#3F194D] border-2 border-black dark:border-white/20 rounded-full px-6 py-2 text-xs font-black uppercase tracking-tight text-black dark:text-white transition-all shadow-[2px_2px_0px_black] dark:shadow-[2px_2px_0px_#DB007D]"
+              className="bg-white dark:bg-[#2D1433] border-2 border-black dark:border-[#DB007D]/40 rounded-full px-6 py-2 text-xs font-black uppercase tracking-tight text-black dark:text-white transition-all shadow-[2px_2px_0px_black] dark:shadow-[2px_2px_0px_#DB007D]"
             >
               {link.label}
             </motion.a>
@@ -34,9 +34,14 @@ const Footer = () => {
         </div>
 
         {/* Branding Footer */}
-        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60 dark:text-white/40 transition-colors">
-          Crafted with <span className="text-[#DB007D]">♥</span> by me
-        </p>
+        <div className="space-y-2">
+          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60 dark:text-[#F9A8D4] transition-colors">
+            © Designed & Built by Shweta Meena
+          </p>
+          <p className="text-[9px] font-bold uppercase tracking-widest text-black/40 dark:text-white/20">
+            Crafted with <span className="text-[#DB007D] dark:text-[#F9A8D4]">♥</span> in Delhi
+          </p>
+        </div>
       </div>
     </footer>
   )
