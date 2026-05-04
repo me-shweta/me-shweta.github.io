@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom' // 1. Import useLocation
 
 const Footer = () => {
+  const location = useLocation() // 2. Initialize location
+
+  // 3. Logic to hide footer on photography page
+  if (location.pathname === '/photography') return null;
+
   const links = [
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shwetameena' },
     { label: 'GitHub', url: 'https://github.com/shwetameena' },
@@ -10,8 +16,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#E6E0F8] dark:bg-[#1a0b21] py-12 transition-colors duration-500">
       <div className="container mx-auto px-6 text-center">
-        
-        {/* Pill Navigation Grid */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {links.map((link) => (
             <motion.a
@@ -33,7 +37,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Branding Footer */}
         <div className="space-y-2">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60 dark:text-[#F9A8D4] transition-colors">
             © Designed & Built by Shweta Meena

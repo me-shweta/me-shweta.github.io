@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
-  Camera, Music, ExternalLink, Users, ShieldCheck, 
+  Camera, Music, Users, ShieldCheck, 
   Briefcase, Globe, ChevronDown, Github, Terminal, 
-  Figma, Cpu, Code2, Layout 
+  Figma, Cpu, Code2, Layout, ArrowUpRight, Heart
 } from 'lucide-react';
 
 const SkillTag = ({ name, hoverColor }) => (
@@ -142,10 +143,10 @@ const Skills = () => {
 
         <div className="border-2 border-black bg-white dark:bg-[#2d1438] rounded-b-3xl rounded-tr-3xl p-8 shadow-[12px_12px_0px_black] dark:shadow-[12px_12px_0px_#DB007D] grid lg:grid-cols-12 gap-8 items-stretch">
           
-          <div className="lg:col-span-5 flex flex-col justify-between py-1">
+          <div className="lg:col-span-5 flex flex-col justify-between">
             {/* Skillset */}
             <div>
-              <h3 className="font-heading font-black text-2xl uppercase mb-4 tracking-tighter text-black dark:text-white">Skillset</h3>
+              <h3 className="font-heading font-black text-xl uppercase mb-4 tracking-tighter text-black dark:text-white">Skillset</h3>
               <div className="flex flex-wrap gap-2">
                 {professionalSkills.map((tag, i) => (
                   <SkillTag key={i} name={tag} hoverColor="#DB007D" />
@@ -154,27 +155,50 @@ const Skills = () => {
             </div>
 
             {/* Tool Stack */}
-            <div className="mt-2 mb-2">
-              <h3 className="font-heading font-black text-2xl uppercase mb-1 tracking-tighter text-black dark:text-white">Tool Stack</h3>
-              <div className="relative h-20 flex items-center justify-around px-2">
+            <div className="mt-8">
+              <h3 className="font-heading font-black text-xl uppercase mb-1 tracking-tighter text-black dark:text-white">Tool Stack</h3>
+              <div className="relative h-16 flex items-center justify-around px-2">
                  {toolStack.map((tool, i) => (
                    <FloatingIcon key={i} {...tool} />
                  ))}
               </div>
             </div>
 
-            {/* Interests */}
-            <div>
-              <h3 className="font-heading font-black text-2xl uppercase mb-3 tracking-tighter text-black dark:text-white">Interests</h3>
-              <div className="grid grid-cols-1 gap-2.5">
-                <a href="/photography" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-3 bg-[#A7E614] border-2 border-black rounded-xl hover:-translate-y-1 transition-all shadow-[4px_4px_0px_black]">
-                  <span className="font-black text-xs uppercase flex items-center gap-3 text-black"><Camera size={18}/> Photography</span>
-                  <ExternalLink size={16} className="text-black/50"/>
-                </a>
-                <a href="/music" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-3 bg-[#9AB4E6] border-2 border-black rounded-xl hover:-translate-y-1 transition-all shadow-[4px_4px_0px_black]">
-                  <span className="font-black text-xs uppercase flex items-center gap-3 text-black"><Music size={18}/> Music</span>
-                  <ExternalLink size={16} className="text-black/50"/>
-                </a>
+            {/* Interests - Reduced size for better balance */}
+            <div className="mt-8">
+              <h3 className="font-heading font-black text-xl uppercase mb-4 tracking-tighter text-black dark:text-white">
+                Interests
+              </h3>
+              <div className="flex flex-col gap-2.5">
+                
+                {/* Active Photography Link */}
+                <Link 
+                  to="/photography" 
+                  className="group flex items-center justify-between px-4 py-2.5 bg-[#c3f567] dark:bg-[#A7E614]/20 border-2 border-black dark:border-white/10 rounded-xl hover:-translate-y-1 hover:bg-[#A7E614] transition-all shadow-[3px_3px_0px_black] dark:shadow-[3px_3px_0px_#A7E614]"
+                >
+                  <span className="font-black text-[10px] uppercase flex items-center gap-3 text-[#305303] dark:text-[#A7E614] group-hover:text-black dark:group-hover:text-white transition-colors">
+                    <Camera size={18}/> Photography
+                  </span>
+                  <ArrowUpRight size={16} className="text-[#305303]/50 dark:text-[#A7E614]/50 group-hover:text-black dark:group-hover:text-white group-hover:rotate-45 transition-all" />
+                </Link>
+
+                {/* Static Music Block */}
+                <div 
+                  className="flex items-center justify-between px-4 py-2.5 bg-[#BFDBFE] dark:bg-[#9AB4E6]/20 border-2 border-black dark:border-white/10 rounded-xl shadow-[3px_3px_0px_black] dark:shadow-[3px_3px_0px_#9AB4E6] cursor-default"
+                >
+                  <span className="font-black text-[10px] uppercase flex items-center gap-3 text-[#1E40AF] dark:text-[#9AB4E6]">
+                    <Music size={18}/> Music
+                  </span>
+                </div>
+
+                {/* Static Collecting Block - Pink Theme */}
+                <div 
+                  className="flex items-center justify-between px-4 py-2.5 bg-[#FBCFE8] dark:bg-[#DB007D]/20 border-2 border-black dark:border-white/10 rounded-xl shadow-[3px_3px_0px_black] dark:shadow-[3px_3px_0px_#DB007D] cursor-default"
+                >
+                  <span className="font-black text-[10px] uppercase flex items-center gap-3 text-[#9D174D] dark:text-[#F9A8D4]">
+                    <Heart size={18} className="fill-current" /> Stickers & Keychains
+                  </span>
+                </div>
               </div>
             </div>
           </div>
