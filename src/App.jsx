@@ -13,7 +13,6 @@ import Contact from './components/Contact'
 // CASE STUDY IMPORTS
 import MovieApp from './pages/Movieapp';
 import GoCheapCab from './pages/Booking'; 
-import TrustLoan from './pages/TrustLoan'; 
 
 // BLOG IMPORTS
 import AestheticBlog from './pages/aesthetic-usability-bias'
@@ -50,7 +49,6 @@ function AppContent() {
           {/* Case Study Routes */}
           <Route path="/case-study/movieapp" element={<MovieApp />} />
           <Route path="/case-study/gocheapcab" element={<GoCheapCab />} />
-          <Route path="/case-study/loanapp" element={<TrustLoan />} />
         </Routes>
       </main>
 

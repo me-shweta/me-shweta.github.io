@@ -50,16 +50,6 @@ const Portfolio = () => {
     }, 
     { 
       id: 5, 
-      title: 'TrustLoan', 
-      category: 'Fintech',
-      image: '/loan.jpeg', 
-      description: 'Loan apps are usually scary. I used "chunking" and progress tracking to turn an anxious process into a confident one.',
-      link: '/case-study/loanapp', // Internal link
-      isExternal: false,
-      tagColor: 'bg-[#0052FF]'
-    },
-    { 
-      id: 6, 
       title: 'Reel Downloader', 
       category: 'Social Media',
       image: '/reel.jpeg', 
