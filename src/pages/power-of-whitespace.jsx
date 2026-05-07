@@ -20,7 +20,7 @@ const WhitespaceBlog = () => {
 
         {/* Hero Image */}
         <div className="w-full aspect-video rounded-3xl overflow-hidden mb-12 bg-[#1a1a1e]">
-          <img src="/blog-cover/power.png" alt="Negative Space in Design" className="w-full h-full object-cover opacity-90" />
+          <img src="../blog-cover/power.png" alt="Negative Space in Design" className="w-full h-full object-cover opacity-90" />
         </div>
 
         {/* Title Section */}

@@ -20,7 +20,7 @@ const AestheticBlog = () => {
 
         {/* Hero Image */}
         <div className="w-full aspect-video rounded-3xl overflow-hidden mb-12 bg-[#1a1a1a]">
-          <img src="/blog-cover/beauty.png" alt="Aesthetic Bias" className="w-full h-full object-cover" />
+          <img src="../blog-cover/beauty.png" alt="Aesthetic Bias" className="w-full h-full object-cover" />
         </div>
 
         {/* Title Section */}

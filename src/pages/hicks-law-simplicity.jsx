@@ -20,12 +20,12 @@ const HicksLawBlog = () => {
 
         {/* Hero Image */}
         <div className="w-full aspect-video rounded-3xl overflow-hidden mb-12 bg-[#121820]">
-          <img src="/blog-cover/hick.png" alt="Hick's Law and Decision Fatigue" className="w-full h-full object-cover" />
+          <img src="../blog-cover/hick.png" alt="Hick's Law and Decision Fatigue" className="w-full h-full object-cover" />
         </div>
 
         {/* Title Section */}
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-          Hick’s Law: The hidden cost of too many choices
+          Hick's Law: The hidden cost of too many choices
         </h1>
         <p className="text-xl md:text-2xl opacity-50 mb-12 italic leading-relaxed">
           Explaining why having more options usually results in users doing absolutely nothing.
