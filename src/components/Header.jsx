@@ -12,6 +12,9 @@ const Header = () => {
   const [showSocials, setShowSocials] = useState(false)
   const [copied, setCopied] = useState(false)
   const observer = useRef(null)
+  
+  // Create a ref for the social pop-down container
+  const socialMenuRef = useRef(null);
 
   if (location.pathname === '/photography' || location.pathname.startsWith('/blog/')) return null;
 
@@ -33,6 +36,25 @@ const Header = () => {
     { label: 'GitHub', url: 'https://github.com/me-shweta', icon: <Github size={16} /> },
     { label: 'Coffee', url: 'https://buymeacoffee.com/shwetameenk?new=1', icon: <Coffee size={16} /> },
   ];
+
+  // Logic to handle clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (socialMenuRef.current && !socialMenuRef.current.contains(event.target)) {
+        setShowSocials(false);
+      }
+    };
+
+    if (showSocials) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showSocials]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,7 +119,10 @@ const Header = () => {
 
             <motion.button 
               whileHover={{ scale: 1.1 }}
-              onClick={() => setShowSocials(!showSocials)}
+              onClick={(e) => {
+                e.stopPropagation(); // Prevents immediate close when clicking the button itself
+                setShowSocials(!showSocials);
+              }}
               className={`text-[9px] md:text-[10px] uppercase tracking-tighter md:tracking-[0.2em] font-black transition-colors ${
                 isScrolled ? 'text-black dark:text-white' : 'text-white'
               } ${showSocials ? 'text-[#FFCE13] dark:text-[#DB007D]' : ''}`}
@@ -119,6 +144,7 @@ const Header = () => {
         <AnimatePresence>
           {showSocials && (
             <motion.div 
+              ref={socialMenuRef} // Attach the ref here
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 10 }}
               exit={{ opacity: 0, y: -20 }}
