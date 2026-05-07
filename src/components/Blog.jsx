@@ -57,7 +57,7 @@ const Blog = () => {
       title: "Status Saver: Building a foundation of trust",
       description: "A deep dive into empathy mapping and transparent design systems used to help people archive temporary digital moments.",
       link: "https://www.notion.so/The-Status-Saver-App-35184571914b80d1b18af651eaf5c24d",
-      image: "public/blog-cover/statuscover.png",
+      image: "blog-cover/statuscover.png",
       isExternal: true
     },
     {
