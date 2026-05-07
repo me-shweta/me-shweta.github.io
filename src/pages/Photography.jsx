@@ -3,26 +3,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Download, Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
+// Function to dynamically import all jpegs from the assets/photos folder
+// This works in Vite projects
+const importedImages = import.meta.glob('../assets/photos/*.{jpeg,jpg,png}', { eager: true });
+
 const Photography = () => {
   const navigate = useNavigate();
   const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const images = [
-    { id: 1, url: '../photos/photo1.jpeg' },
-    { id: 2, url: '../photos/photo2.jpeg' },
-    { id: 3, url: '../photos/photo3.jpeg' },
-    { id: 4, url: '../photos/photo4.jpeg' },
-    { id: 5, url: '../photos/photo5.jpeg' },
-    { id: 6, url: '../photos/photo6.jpeg' },
-    { id: 7, url: '../photos/photo7.jpeg' },
-    { id: 8, url: '../photos/photo8.jpeg' },
-    { id: 9, url: '../photos/photo9.jpeg' },
-    { id: 10, url: '../photos/photo10.jpeg' },
-    { id: 11, url: '../photos/photo11.jpeg' },
-    { id: 12, url: '../photos/photo12.jpeg' },
-    { id: 13, url: '../photos/photo13.jpeg' },
-    { id: 14, url: '../photos/photo14.jpeg' },
-  ];
+  // Transform the imported objects into your images array
+  const images = Object.values(importedImages).map((module, index) => ({
+    id: index + 1,
+    url: module.default, // This is the actual processed URL
+  }));
 
   const handlePrev = (e) => {
     e.stopPropagation();
@@ -43,14 +36,14 @@ const Photography = () => {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedIndex]);
+  }, [selectedIndex, images.length]);
 
   const selectedImg = selectedIndex !== null ? images[selectedIndex] : null;
 
   return (
-    <div className="min-h-screen bg-[#E6E0F8] dark:bg-[#1a0b21] pt-16 pb-12 px-4 md:px-6 transition-colors duration-500">
+    <div className="min-h-screen bg-[#E6E0F8] dark:bg-[#1a0b21] pt-16 pb-12 px-4 md:px-6 transition-colors duration-500 font-sans">
       
-      {/* Top Navigation Bar - Standalone for this page */}
+      {/* Top Navigation Bar */}
       <div className="max-w-[1800px] mx-auto flex justify-between items-center mb-10">
         <motion.button
           onClick={() => navigate(-1)}
@@ -60,24 +53,25 @@ const Photography = () => {
           <ArrowLeft size={14} /> Back
         </motion.button>
         
-        <p className="font-heading font-black text-2xl md:text-2xl uppercase tracking-tighter text-black dark:text-white">
+        <p className="font-black text-2xl md:text-2xl uppercase tracking-tighter text-black dark:text-white">
           {images.length} Images
         </p>
       </div>
 
-      {/* 5-Column Grid (Desktop) - No borders on images */}
+      {/* Masonry-style Grid */}
       <div className="max-w-[1800px] mx-auto columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-3 space-y-3">
         {images.map((img, index) => (
           <motion.div
             key={img.id}
             layoutId={`img-${img.id}`}
             onClick={() => setSelectedIndex(index)}
-            className="group cursor-pointer relative overflow-hidden bg-black/5 dark:bg-white/5 break-inside-avoid"
+            className="group cursor-pointer relative overflow-hidden rounded-lg bg-black/5 dark:bg-white/5 break-inside-avoid border border-transparent hover:border-black dark:hover:border-[#DB007D] transition-all"
           >
             <img 
               src={img.url} 
-              alt="" 
-              className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+              alt={`Photography ${img.id}`} 
+              className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                <Maximize2 className="text-white opacity-70" size={20} />
@@ -114,29 +108,29 @@ const Photography = () => {
                 </button>
 
                 {/* Main Content Area */}
-                <div className="w-full bg-black/5 dark:bg-black/20 flex items-center justify-center min-h-[40vh]">
+                <div className="w-full bg-black/5 dark:bg-black/20 flex items-center justify-center min-h-[50vh]">
                   <img 
                     key={selectedImg.id} 
                     src={selectedImg.url} 
                     alt="" 
-                    className="max-w-full h-auto max-h-[70vh] object-contain shadow-xl" 
+                    className="max-w-full h-auto max-h-[75vh] object-contain" 
                   />
                 </div>
                 
-                {/* Footer Buttons - Full Res on Left, Download on Right */}
-                <div className="p-5 flex gap-4 w-full justify-center bg-white dark:bg-[#1a0b21]">
+                {/* Footer Buttons */}
+                <div className="p-5 flex gap-4 w-full justify-center bg-white dark:bg-[#1a0b21] border-t border-black/10 dark:border-white/5">
                   <a 
                     href={selectedImg.url} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="flex items-center gap-2 px-5 py-2.5 bg-[#9AB4E6] border-2 border-black rounded-lg font-black uppercase text-[10px] shadow-[3px_3px_0px_black] hover:-translate-y-0.5 transition-all"
+                    className="flex items-center gap-2 px-5 py-2.5 bg-[#9AB4E6] border-2 border-black rounded-lg font-black uppercase text-[10px] shadow-[3px_3px_0px_black] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all"
                   >
                     <Maximize2 size={14} /> Full Res
                   </a>
                   <a 
                     href={selectedImg.url} 
-                    download 
-                    className="flex items-center gap-2 px-5 py-2.5 bg-[#A7E614] border-2 border-black rounded-lg font-black uppercase text-[10px] shadow-[3px_3px_0px_black] hover:-translate-y-0.5 transition-all"
+                    download={`photo-${selectedImg.id}.jpeg`} 
+                    className="flex items-center gap-2 px-5 py-2.5 bg-[#A7E614] border-2 border-black rounded-lg font-black uppercase text-[10px] shadow-[3px_3px_0px_black] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all"
                   >
                     <Download size={14} /> Download
                   </a>
