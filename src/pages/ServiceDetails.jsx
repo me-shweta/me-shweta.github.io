@@ -26,7 +26,6 @@ const ServiceDetails = () => {
               </h1>
               
               <div className="relative rounded-[3rem] overflow-hidden mb-12 aspect-video glass-card border-none">
-                {/* Replace with your specific service image later */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#FF5C00]/20 to-transparent flex items-center justify-center">
                    <p className="text-xs uppercase tracking-widest font-black opacity-30">Strategic Visual System</p>
                 </div>

@@ -59,7 +59,7 @@ const MovieAppCaseStudy = () => {
 
             <div className="flex flex-col md:flex-row gap-12 pt-6 items-center justify-center">
               <img src="/movie/screens.png" alt="Phase A: Discovery Hub" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="/movie/screen 2.png" alt="Phase A: One-handed search with history" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="/movie/screen2.png" alt="Phase A: One-handed search with history" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
           </section>
 
