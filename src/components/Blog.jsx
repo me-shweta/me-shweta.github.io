@@ -4,7 +4,6 @@ import { HiOutlineArrowUpRight } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
-  // Utility function to force scroll to top
   const handleScrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -17,7 +16,7 @@ const Blog = () => {
   title: "The Hidden UX Secrets Behind an App That Just Works",
   description: "Beyond basic utility: A deep dive into the UX strategy, iterative validation, and trust-building systems behind a 'simple' status downloader.",
   link: "https://medium.com/@shwetameena0511/the-hidden-ux-secrets-behind-an-app-that-just-works-4df611251666",
-  image: "public/blog-cover/medium.png",
+  image: "/blog-cover/medium.png",
   isExternal: true
 },
     {
@@ -27,7 +26,7 @@ const Blog = () => {
       title: "Chunking: How to not overwhelm your users",
       description: "Why breaking down information is the kindest thing you can do for someone's working memory.",
       link: "/blog/ux-chunking-guide",
-      image: "public/blog-cover/chunking.png",
+      image: "/blog-cover/chunking.png",
       isExternal: false
     },
     {
@@ -37,7 +36,7 @@ const Blog = () => {
       title: "Hick's Law: The hidden cost of too many choices",
       description: "Explaining why having more options usually results in users doing absolutely nothing.",
       link: "/blog/hicks-law-simplicity",
-      image: "public/blog-cover/hick.png",
+      image: "/blog-cover/hick.png",
       isExternal: false
     },
     {
@@ -47,7 +46,7 @@ const Blog = () => {
       title: "F & Z-Patterns: Guiding the eye naturally",
       description: "How people actually read screens and how you can use that to put your best content first.",
       link: "/blog/visual-scanning-patterns",
-      image: "public/blog-cover/patterns.png",
+      image: "/blog-cover/patterns.png",
       isExternal: false
     },
     {
@@ -57,7 +56,7 @@ const Blog = () => {
       title: "Status Saver: Building a foundation of trust",
       description: "A deep dive into empathy mapping and transparent design systems used to help people archive temporary digital moments.",
       link: "https://www.notion.so/The-Status-Saver-App-35184571914b80d1b18af651eaf5c24d",
-      image: "blog-cover/statuscover.png",
+      image: "/blog-cover/statuscover.png",
       isExternal: true
     },
     {
@@ -67,7 +66,7 @@ const Blog = () => {
       title: "Beauty Bias: Why we forgive pretty designs",
       description: "Looking at the Aesthetic-Usability Effect and why a good-looking interface feels easier to use.",
       link: "/blog/aesthetic-usability-bias",
-      image: "public/blog-cover/beauty.png",
+      image: "/blog-cover/beauty.png",
       isExternal: false
     },
     {
@@ -77,7 +76,7 @@ const Blog = () => {
       title: "The power of nothing: Why white space matters",
       description: "Using empty space as a deliberate tool to create focus, clarity, and a sense of calm.",
       link: "/blog/power-of-whitespace",
-      image: "public/blog-cover/power.png",
+      image: "/blog-cover/power.png",
       isExternal: false
     }
   ];
