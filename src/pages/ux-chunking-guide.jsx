@@ -20,7 +20,7 @@ const ChunkingBlog = () => {
 
         {/* Hero Image */}
         <div className="w-full aspect-video rounded-3xl overflow-hidden mb-12 bg-[#1a1a1a]">
-          <img src="/public/blog-cover/chunking.png" alt="Chunking in UI Design" className="w-full h-full object-cover" />
+          <img src="/blog-cover/chunking.png" alt="Chunking in UI Design" className="w-full h-full object-cover" />
         </div>
 
         {/* Title Section */}

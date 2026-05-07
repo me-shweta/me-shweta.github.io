@@ -17,7 +17,7 @@ const PatternsBlog = () => {
         </div>
 
         <div className="w-full aspect-video rounded-2xl overflow-hidden mb-12 bg-[#161b22]">
-          <img src="/public/blog-cover/patterns.png" alt="Visual Hierarchy" className="w-full h-full object-cover" />
+          <img src="/blog-cover/patterns.png" alt="Visual Hierarchy" className="w-full h-full object-cover" />
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">

@@ -20,7 +20,7 @@ const HicksLawBlog = () => {
 
         {/* Hero Image */}
         <div className="w-full aspect-video rounded-3xl overflow-hidden mb-12 bg-[#121820]">
-          <img src="/public/blog-cover/hick.png" alt="Hick's Law and Decision Fatigue" className="w-full h-full object-cover" />
+          <img src="/blog-cover/hick.png" alt="Hick's Law and Decision Fatigue" className="w-full h-full object-cover" />
         </div>
 
         {/* Title Section */}
