@@ -13,7 +13,7 @@ const HicksLawBlog = () => {
 
         {/* Metadata */}
         <div className="flex items-center gap-4 text-xs opacity-40 mb-6 font-medium">
-          <span>May 05, 2026</span>
+          <span>April 20, 2026</span>
           <span className="w-1 h-1 bg-white rounded-full"></span>
           <span>10 min read</span>
         </div>

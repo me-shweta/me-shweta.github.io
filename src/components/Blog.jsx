@@ -10,74 +10,74 @@ const Blog = () => {
   };
 
   const blogPosts = [
-    {
-      id: 1,
-      date: "Apr 29, 2026",
-      category: "UX Case Study",
-      title: "Status Saver: Building a foundation of trust",
-      description: "A deep dive into empathy mapping and transparent design systems used to help people archive temporary digital moments.",
-      link: "https://www.notion.so/The-Status-Saver-App-35184571914b80d1b18af651eaf5c24d",
-      image: "/statuscover.png",
-      isExternal: true
-    },
+      {
+  id: 1,
+  date: "May 07, 2026",
+  category: "UX Case Study",
+  title: "The Hidden UX Secrets Behind an App That Just Works",
+  description: "Beyond basic utility: A deep dive into the UX strategy, iterative validation, and trust-building systems behind a 'simple' status downloader.",
+  link: "https://medium.com/@shwetameena0511/the-hidden-ux-secrets-behind-an-app-that-just-works-4df611251666",
+  image: "public/blog-cover/medium.png",
+  isExternal: true
+},
     {
       id: 2,
-      date: "May 02, 2026",
-      category: "UX Case Study",
-      title: "Reel Downloader: Making media acquisition effortless",
-      description: "Solving mobile friction points by leveraging native APIs for a cleaner, faster background workflow.",
-      link: "https://play.google.com/store/apps/details?id=com.sensei.social&hl=en_IN",
-      image: "/reelcover.png",
-      isExternal: true
-    },
-    {
-      id: 3,
-      date: "May 05, 2026",
+      date: "Apr 28, 2026",
       category: "Fundamentals",
       title: "Chunking: How to not overwhelm your users",
       description: "Why breaking down information is the kindest thing you can do for someone's working memory.",
       link: "/blog/ux-chunking-guide",
-      image: "/public/blog-cover/chunking.png",
+      image: "public/blog-cover/chunking.png",
+      isExternal: false
+    },
+    {
+      id: 3,
+      date: "Apr 20, 2026",
+      category: "Psychology",
+      title: "Hick's Law: The hidden cost of too many choices",
+      description: "Explaining why having more options usually results in users doing absolutely nothing.",
+      link: "/blog/hicks-law-simplicity",
+      image: "public/blog-cover/hick.png",
       isExternal: false
     },
     {
       id: 4,
-      date: "May 05, 2026",
-      category: "Psychology",
-      title: "Hick’s Law: The hidden cost of too many choices",
-      description: "Explaining why having more options usually results in users doing absolutely nothing.",
-      link: "/blog/hicks-law-simplicity",
-      image: "/public/blog-cover/hick.png",
-      isExternal: false
-    },
-    {
-      id: 5,
-      date: "May 04, 2026",
+      date: "Apr 01, 2026",
       category: "Visual Hierarchy",
       title: "F & Z-Patterns: Guiding the eye naturally",
       description: "How people actually read screens and how you can use that to put your best content first.",
       link: "/blog/visual-scanning-patterns",
-      image: "/public/blog-cover/patterns.png",
+      image: "public/blog-cover/patterns.png",
       isExternal: false
     },
     {
+      id: 5,
+      date: "Feb 10, 2026",
+      category: "UX Case Study",
+      title: "Status Saver: Building a foundation of trust",
+      description: "A deep dive into empathy mapping and transparent design systems used to help people archive temporary digital moments.",
+      link: "https://www.notion.so/The-Status-Saver-App-35184571914b80d1b18af651eaf5c24d",
+      image: "public/blog-cover/statuscover.png",
+      isExternal: true
+    },
+    {
       id: 6,
-      date: "May 03, 2026",
+      date: "Jan 25, 2026",
       category: "Principles",
       title: "Beauty Bias: Why we forgive pretty designs",
       description: "Looking at the Aesthetic-Usability Effect and why a good-looking interface feels easier to use.",
       link: "/blog/aesthetic-usability-bias",
-      image: "/public/blog-cover/beauty.png",
+      image: "public/blog-cover/beauty.png",
       isExternal: false
     },
     {
       id: 7,
-      date: "May 01, 2026",
+      date: "Jan 01, 2026",
       category: "Design Strategy",
       title: "The power of nothing: Why white space matters",
       description: "Using empty space as a deliberate tool to create focus, clarity, and a sense of calm.",
       link: "/blog/power-of-whitespace",
-      image: "/public/blog-cover/power.png",
+      image: "public/blog-cover/power.png",
       isExternal: false
     }
   ];

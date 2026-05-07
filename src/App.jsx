@@ -10,6 +10,7 @@ import Photography from './pages/Photography'
 import BlogList from './components/Blog'
 import Contact from './components/Contact'
 
+import StoryDownloaderBlog from './pages/storydownloader'
 import AestheticBlog from './pages/aesthetic-usability-bias'
 import PatternsBlog from './pages/visual-scanning-patterns'
 import ChunkingBlog from './pages/ux-chunking-guide'
@@ -35,6 +36,7 @@ function AppContent() {
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/storydownloader" element={<StoryDownloaderBlog />} />
           <Route path="/blog/aesthetic-usability-bias" element={<AestheticBlog />} />
           <Route path="/blog/visual-scanning-patterns" element={<PatternsBlog />} />
           <Route path="/blog/ux-chunking-guide" element={<ChunkingBlog />} />

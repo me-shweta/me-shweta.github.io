@@ -11,7 +11,7 @@ const PatternsBlog = () => {
         </Link>
 
         <div className="flex items-center gap-4 text-xs opacity-50 mb-6">
-          <span>May 04, 2026</span>
+          <span>April 01, 2026</span>
           <span className="w-1 h-1 bg-white rounded-full"></span>
           <span>10 min read</span>
         </div>
