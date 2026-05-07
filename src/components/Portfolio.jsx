@@ -11,7 +11,7 @@ const Portfolio = () => {
     { 
       id: 1, 
       title: 'WealthWare', 
-      category: 'Fintech',
+      category: 'Web',
       image: '/wealthware.jpeg', 
       description: 'Money is personal, so fintech should be too. I simplified complex data into a dashboard that actually makes sense.',
       link: 'https://wealth-ware.vercel.app/login',
@@ -21,7 +21,7 @@ const Portfolio = () => {
     { 
       id: 2, 
       title: 'Movie App', 
-      category: 'Entertainment',
+      category: 'App',
       image: '/movie.jpeg', 
       description: 'Stop scrolling, start watching. I designed this to solve the Paradox of Choice by matching content to your vibe.',
       link: '/case-study/movieapp', 
@@ -31,7 +31,7 @@ const Portfolio = () => {
     { 
       id: 3, 
       title: 'Stories Downloader', 
-      category: 'Utilities',
+      category: 'App',
       image: '/status.jpeg', 
       description: 'Digital moments disappear fast. I designed this to archive them with zero friction and a single tap.',
       link: 'https://play.google.com/store/apps/details?id=com.sensei.stories',
@@ -41,7 +41,7 @@ const Portfolio = () => {
     { 
       id: 4, 
       title: 'GoCheapCab', 
-      category: 'Mobility',
+      category: 'App',
       image: '/gocheapcab.png', 
       description: 'Tired of app-hopping between Uber and Ola? I built a unified space to compare fares and book rides in seconds.',
       link: '/case-study/gocheapcab', 
@@ -51,7 +51,7 @@ const Portfolio = () => {
     { 
       id: 5, 
       title: 'Reel Downloader', 
-      category: 'Social Media',
+      category: 'App',
       image: '/reel.jpeg', 
       description: 'Optimizing mobile friction points for media acquisition via native Android APIs.',
       link: 'https://play.google.com/store/apps/details?id=com.sensei.social&hl=en_IN',
@@ -60,7 +60,7 @@ const Portfolio = () => {
     }
   ]
 
-  const filters = ['All', 'Fintech', 'Mobility', 'Entertainment', 'Utilities', 'Social Media']
+  const filters = ['All', 'Web', 'App']
 
   const filteredItems = activeFilter === 'All' 
     ? portfolioItems 
