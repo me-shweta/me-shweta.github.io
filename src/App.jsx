@@ -36,7 +36,6 @@ function AppContent() {
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/storydownloader" element={<StoryDownloaderBlog />} />
           <Route path="/blog/aesthetic-usability-bias" element={<AestheticBlog />} />
           <Route path="/blog/visual-scanning-patterns" element={<PatternsBlog />} />
           <Route path="/blog/ux-chunking-guide" element={<ChunkingBlog />} />
