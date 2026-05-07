@@ -130,7 +130,7 @@ const MovieAppCaseStudy = () => {
                 To build platform integrity, robust Help Center and Legal documentation modules were integrated. This reduces technical friction by providing instant answers and clear data terms for subscribers. The full FAQ and legal architecture flow is visible here.
               </p>
             </div>
-            <img src="./movie/support.png" alt="Support FAQs and Legal logic structure" className="w-full max-w-sm rounded-2xl border border-slate-100 shadow-xl mx-auto" />
+            <img src="/movie/support.png" alt="Support FAQs and Legal logic structure" className="w-full max-w-sm rounded-2xl border border-slate-100 shadow-xl mx-auto" />
           </section>
 
           <section className="bg-slate-900 text-white p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden shadow-2xl">
