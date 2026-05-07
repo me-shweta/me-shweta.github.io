@@ -8,20 +8,20 @@ const Photography = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const images = [
-    { id: 1, url: '/photos/photo1.jpeg' },
-    { id: 2, url: '/photos/photo2.jpeg' },
-    { id: 3, url: '/photos/photo3.jpeg' },
-    { id: 4, url: '/photos/photo4.jpeg' },
-    { id: 5, url: '/photos/photo5.jpeg' },
-    { id: 6, url: '/photos/photo6.jpeg' },
-    { id: 7, url: '/photos/photo7.jpeg' },
-    { id: 8, url: '/photos/photo8.jpeg' },
-    { id: 9, url: '/photos/photo9.jpeg' },
-    { id: 10, url: '/photos/photo10.jpeg' },
-    { id: 11, url: '/photos/photo11.jpeg' },
-    { id: 12, url: '/photos/photo12.jpeg' },
-    { id: 13, url: '/photos/photo13.jpeg' },
-    { id: 14, url: '/photos/photo14.jpeg' },
+    { id: 1, url: '../photos/photo1.jpeg' },
+    { id: 2, url: '../photos/photo2.jpeg' },
+    { id: 3, url: '../photos/photo3.jpeg' },
+    { id: 4, url: '../photos/photo4.jpeg' },
+    { id: 5, url: '../photos/photo5.jpeg' },
+    { id: 6, url: '../photos/photo6.jpeg' },
+    { id: 7, url: '../photos/photo7.jpeg' },
+    { id: 8, url: '../photos/photo8.jpeg' },
+    { id: 9, url: '../photos/photo9.jpeg' },
+    { id: 10, url: '../photos/photo10.jpeg' },
+    { id: 11, url: '../photos/photo11.jpeg' },
+    { id: 12, url: '../photos/photo12.jpeg' },
+    { id: 13, url: '../photos/photo13.jpeg' },
+    { id: 14, url: '../photos/photo14.jpeg' },
   ];
 
   const handlePrev = (e) => {
