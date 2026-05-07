@@ -10,6 +10,12 @@ import Photography from './pages/Photography'
 import BlogList from './components/Blog'
 import Contact from './components/Contact'
 
+// CASE STUDY IMPORTS
+import MovieApp from './pages/Movieapp';
+import GoCheapCab from './pages/Booking'; 
+import TrustLoan from './pages/TrustLoan'; 
+
+// BLOG IMPORTS
 import AestheticBlog from './pages/aesthetic-usability-bias'
 import PatternsBlog from './pages/visual-scanning-patterns'
 import ChunkingBlog from './pages/ux-chunking-guide'
@@ -19,7 +25,7 @@ import WhitespaceBlog from './pages/power-of-whitespace'
 function AppContent() {
   const location = useLocation();
 
-  const isIndividualArticle = location.pathname.startsWith('/blog/');
+  const isIndividualArticle = location.pathname.startsWith('/blog/') || location.pathname.startsWith('/case-study/');
 
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300 dark:bg-[#1a0b21]">
@@ -33,11 +39,18 @@ function AppContent() {
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />
+          
+          {/* Blog Routes */}
           <Route path="/blog/aesthetic-usability-bias" element={<AestheticBlog />} />
           <Route path="/blog/visual-scanning-patterns" element={<PatternsBlog />} />
           <Route path="/blog/ux-chunking-guide" element={<ChunkingBlog />} />
           <Route path="/blog/hicks-law-simplicity" element={<HicksLawBlog />} />
           <Route path="/blog/power-of-whitespace" element={<WhitespaceBlog />} />
+          
+          {/* Case Study Routes */}
+          <Route path="/case-study/movieapp" element={<MovieApp />} />
+          <Route path="/case-study/gocheapcab" element={<GoCheapCab />} />
+          <Route path="/case-study/loanapp" element={<TrustLoan />} />
         </Routes>
       </main>
 
