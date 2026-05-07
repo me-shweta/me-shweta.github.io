@@ -22,8 +22,8 @@ const MovieAppCaseStudy = () => {
               MovieApp is a curated streaming ecosystem designed to bridge the gap between massive content libraries and human emotion. We began by refining the main onboarding entry points, focusing on immediate visual immersion and personalized language selection to reduce time-to-value.
             </p>
             <div className="flex flex-col md:flex-row gap-6 pt-10 items-center justify-center">
-              <img src="movie/homescreen.png" alt="Homescreen with personalized banners" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/language.png" alt="Language selection with country flags" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/homescreen.png" alt="Homescreen with personalized banners" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/language.png" alt="Language selection with country flags" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
             <p className="text-sm text-slate-500 italic text-center">Fig 1: Reducing grid density to highlight premium, mood-aligned content.</p>
           </section>
@@ -37,12 +37,12 @@ const MovieAppCaseStudy = () => {
                 Modern users spend an average of 18 minutes scrolling through streaming menus. This <strong>Decision Fatigue</strong> stems from poor information hierarchy. Furthermore, security anxiety can act as a drop-off point during commitment. My solution was to integrate high-trust design patterns and secure, Frictionless onboarding.
               </p>
               <div className="flex flex-col md:flex-row gap-6 pt-10 items-center justify-center">
-                <img src="movie/signin.png" alt="SignIn gate" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-                <img src="movie/password.png" alt="Password management screen" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+                <img src="./movie/signin.png" alt="SignIn gate" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+                <img src="./movie/password.png" alt="Password management screen" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-6 pt-10 items-center justify-center border-t border-slate-200 mt-10">
-              <img src="movie/homescreen.png" alt="Cognitive Overload example" className="w-full md:w-1/2 max-w-xs opacity-60 rounded-xl" />
+              <img src="./movie/homescreen.png" alt="Cognitive Overload example" className="w-full md:w-1/2 max-w-xs opacity-60 rounded-xl" />
               <p className="text-sm opacity-60">Solving Choice Paralysis implies addressing the Cognitive Overload and Security Anxiety shown here.</p>
             </div>
           </section>
@@ -58,8 +58,8 @@ const MovieAppCaseStudy = () => {
             </div>
 
             <div className="flex flex-col md:flex-row gap-12 pt-6 items-center justify-center">
-              <img src="movie/screens.png" alt="Phase A: Discovery Hub" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/screen 2.png" alt="Phase A: One-handed search with history" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/screens.png" alt="Phase A: Discovery Hub" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/screen 2.png" alt="Phase A: One-handed search with history" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
           </section>
 
@@ -74,8 +74,8 @@ const MovieAppCaseStudy = () => {
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-              <img src="movie/shows.png" alt="Phase B: Validation - Show details and episodes" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/review.png" alt="Phase B: Validation - Community ratings and sentiment flow" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/shows.png" alt="Phase B: Validation - Show details and episodes" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/review.png" alt="Phase B: Validation - Community ratings and sentiment flow" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
           </section>
 
@@ -90,8 +90,8 @@ const MovieAppCaseStudy = () => {
             </div>
 
             <div className="flex flex-col md:flex-row gap-6 pt-6 items-center justify-center">
-              <img src="movie/subscription.png" alt="Phase C: Commitment - Contrast pricing options" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/payment.png" alt="Phase C: Commitment - Frictionless payment and immediate satisfaction" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/subscription.png" alt="Phase C: Commitment - Contrast pricing options" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/payment.png" alt="Phase C: Commitment - Frictionless payment and immediate satisfaction" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
           </section>
 
@@ -103,8 +103,8 @@ const MovieAppCaseStudy = () => {
               I prioritized <strong>Biometric Security (FaceID/TouchID)</strong> within the settings to ensure that user identity, payment methods, and downloaded content remain secure, while allowing profiles and data management to be updated in real-time.
             </p>
             <div className="flex flex-col md:flex-row gap-6 pt-6 items-center justify-center">
-              <img src="movie/setting.png" alt="Identity hub for security toggles" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/empty.png" alt="Fallback example of failure design" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/setting.png" alt="Identity hub for security toggles" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/empty.png" alt="Fallback example of failure design" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
             <p className="text-sm opacity-60 text-center pt-4">This profile management and security hub addresses the 'Cognitive Overload' and 'Security Anxiety' mentioned in Phase 02.</p>
           </section>
@@ -117,12 +117,11 @@ const MovieAppCaseStudy = () => {
               Edge cases are where UX lives or dies. I designed custom illustrated wayfinders for "Empty States" and "No Network." These screens guide the user back to their available downloaded content, ensuring the app is functional and useful even when disconnected.
             </p>
             <div className="flex flex-col md:flex-row gap-12 pt-6 items-center justify-center">
-              <img src="movie/empty.png" alt="Fallback: No network found state" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
-              <img src="movie/search.png" alt="Resilient Design: Downloading and storage management logic" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/empty.png" alt="Fallback: No network found state" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
+              <img src="./movie/search.png" alt="Resilient Design: Downloading and storage management logic" className="w-full md:w-1/2 max-w-sm rounded-2xl border border-slate-100 shadow-xl" />
             </div>
           </section>
 
-          {/* Section 8: Support & Legal - Single for support, pair logic for support flow */}
           <section className="space-y-10">
             <div className="space-y-6">
               <h2 className="text-xs font-black uppercase tracking-[0.4em] text-[#DB007D]">08. Information Architecture</h2>
@@ -131,10 +130,9 @@ const MovieAppCaseStudy = () => {
                 To build platform integrity, robust Help Center and Legal documentation modules were integrated. This reduces technical friction by providing instant answers and clear data terms for subscribers. The full FAQ and legal architecture flow is visible here.
               </p>
             </div>
-            <img src="movie/support.png" alt="Support FAQs and Legal logic structure" className="w-full max-w-sm rounded-2xl border border-slate-100 shadow-xl mx-auto" />
+            <img src="./movie/support.png" alt="Support FAQs and Legal logic structure" className="w-full max-w-sm rounded-2xl border border-slate-100 shadow-xl mx-auto" />
           </section>
 
-          {/* Summary */}
           <section className="bg-slate-900 text-white p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden shadow-2xl">
             <div className="relative z-10 space-y-8">
               <h2 className="text-xs font-black uppercase tracking-[0.4em] text-[#DB007D]">09. Final Summary</h2>
