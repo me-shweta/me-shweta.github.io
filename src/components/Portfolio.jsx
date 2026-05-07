@@ -11,7 +11,7 @@ const Portfolio = () => {
       id: 1, 
       title: 'WealthWare', 
       category: 'Web design',
-      image: '/wealthware.png', 
+      image: '/wealthware.jpeg', 
       description: 'A fintech solution focused on cognitive ease, streamlining complex financial data into actionable insights through a modular, accessible interface.',
       link: 'https://wealth-ware.vercel.app/login',
       tagColor: 'bg-[#FFCE13]'
@@ -20,7 +20,7 @@ const Portfolio = () => {
       id: 2, 
       title: 'Movie App', 
       category: 'App design',
-      image: '/movie.png', 
+      image: '/movie.jpeg', 
       description: 'An immersive entertainment platform prioritizing content discovery and personalization through a dark-mode optimized, gesture-driven mobile interface.',
       link: '#',
       tagColor: 'bg-orange-500'
@@ -29,7 +29,7 @@ const Portfolio = () => {
       id: 3, 
       title: 'Status Download App', 
       category: 'App design',
-      image: '/status.png', 
+      image: '/status.jpeg', 
       description: 'A utility-first UX case study focused on file persistence logic, automating the archival of transient social media assets via a simplified 1-tap workflow.',
       link: 'https://play.google.com/store/apps/details?id=com.sensei.stories',
       tagColor: 'bg-[#DB007D]'
@@ -38,7 +38,7 @@ const Portfolio = () => {
       id: 4, 
       title: 'Reel Downloader', 
       category: 'App design',
-      image: '/reel.png', 
+      image: '/reel.jpeg', 
       description: 'Optimizing mobile friction points for media acquisition, this tool leverages native Android APIs to provide a seamless background download experience.',
       link: 'https://play.google.com/store/apps/details?id=com.sensei.social&hl=en_IN',
       tagColor: 'bg-black'

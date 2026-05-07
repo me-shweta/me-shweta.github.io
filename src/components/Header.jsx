@@ -13,7 +13,6 @@ const Header = () => {
   const [copied, setCopied] = useState(false)
   const observer = useRef(null)
   
-  // Create a ref for the social pop-down container
   const socialMenuRef = useRef(null);
 
   if (location.pathname === '/photography' || location.pathname.startsWith('/blog/')) return null;
@@ -120,7 +119,7 @@ const Header = () => {
             <motion.button 
               whileHover={{ scale: 1.1 }}
               onClick={(e) => {
-                e.stopPropagation(); // Prevents immediate close when clicking the button itself
+                e.stopPropagation();
                 setShowSocials(!showSocials);
               }}
               className={`text-[9px] md:text-[10px] uppercase tracking-tighter md:tracking-[0.2em] font-black transition-colors ${
@@ -140,17 +139,15 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Socials Pop-down Menu */}
         <AnimatePresence>
           {showSocials && (
             <motion.div 
-              ref={socialMenuRef} // Attach the ref here
+              ref={socialMenuRef} 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 10 }}
               exit={{ opacity: 0, y: -20 }}
               className="absolute top-full left-0 right-0 mx-auto w-max bg-white dark:bg-[#1a0b21] border-2 border-black dark:border-white/20 p-3 rounded-2xl flex gap-5 shadow-[6px_6px_0px_rgba(0,0,0,1)] dark:shadow-[6px_6px_0px_#DB007D] z-[110]"
             >
-              {/* LinkedIn & GitHub Links */}
               {socialLinks.map((social) => (
                 <a 
                   key={social.label} 

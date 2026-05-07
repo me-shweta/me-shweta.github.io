@@ -19,8 +19,6 @@ import WhitespaceBlog from './pages/power-of-whitespace'
 function AppContent() {
   const location = useLocation();
 
-  // This ensures that any path starting with /blog/ (the individual pages) 
-  // will hide the Header and Footer.
   const isIndividualArticle = location.pathname.startsWith('/blog/');
 
   return (
