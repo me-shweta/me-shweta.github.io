@@ -10,7 +10,6 @@ import Photography from './pages/Photography'
 import BlogList from './components/Blog'
 import Contact from './components/Contact'
 
-import StoryDownloaderBlog from './pages/storydownloader'
 import AestheticBlog from './pages/aesthetic-usability-bias'
 import PatternsBlog from './pages/visual-scanning-patterns'
 import ChunkingBlog from './pages/ux-chunking-guide'
