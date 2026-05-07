@@ -14,7 +14,7 @@ const Portfolio = () => {
       category: 'Fintech',
       image: '/wealthware.jpeg', 
       description: 'Money is personal, so fintech should be too. I simplified complex data into a dashboard that actually makes sense.',
-      link: 'https://wealth-ware.vercel.app/login', // External link
+      link: 'https://wealth-ware.vercel.app/login',
       isExternal: true,
       tagColor: 'bg-[#FFCE13]'
     },
@@ -24,7 +24,7 @@ const Portfolio = () => {
       category: 'Entertainment',
       image: '/movie.jpeg', 
       description: 'Stop scrolling, start watching. I designed this to solve the Paradox of Choice by matching content to your vibe.',
-      link: '/case-study/movieapp', // Internal link
+      link: '/case-study/movieapp', 
       isExternal: false,
       tagColor: 'bg-orange-500'
     },
@@ -42,9 +42,9 @@ const Portfolio = () => {
       id: 4, 
       title: 'GoCheapCab', 
       category: 'Mobility',
-      image: '/cab.jpeg', 
+      image: '/gocheapcab.png', 
       description: 'Tired of app-hopping between Uber and Ola? I built a unified space to compare fares and book rides in seconds.',
-      link: '/case-study/gocheapcab', // Internal link
+      link: '/case-study/gocheapcab', 
       isExternal: false,
       tagColor: 'bg-[#A7E614]'
     }, 
